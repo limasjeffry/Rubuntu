@@ -1,0 +1,39 @@
+{
+    "name": "Vubuntu-PureVNC",
+    "description": "Fully fledged Ubuntu with pure VNC, refer readme for more info.",
+    "repository": "https://github.com/vital987/vubuntu.git",
+    "logo": "https://imgur.com/1qCGUwK.png",
+    "keywords": ["docker","ubuntu", "vscode", "purevnc", "pure", "firefox", "brave", "fluxbox", "linux", "remote", "ssh", "vnc", "vubuntu"],
+    "stack": "container",
+    "env": {
+      "VNC_TITLE" : {
+        "description": "VNC Session Title, w/o spaces.",
+	      "value" : "Vubuntu-PureVNC",
+        "required" : true
+      } ,
+      "VNC_PASS": {
+        "description": "VNC server password w/o spaces.",
+        "required" : true
+      },
+      "VNC_RESOLUTION" : {
+        "description": "VNC Server Resolution in WxH, 720p is preferrable.",
+		"value" : "1280x720",
+        "required" : true
+      },
+      "NGROK_AUTH_TOKEN" : {
+        "description": "Ngrok Auth-Token",
+		"value" : "",
+        "required" : true
+      },
+      "NO_SLEEP" : {
+        "description": "Prevent app from sleeping, 1=on, 0=off",
+                "value" : "0",
+        "required" : true
+      },
+      "APP_NAME" : {
+        "description": "Name of the app, same as mentioned above.",
+                "value" : "",
+        "required" : true
+      }
+    } 
+  }
